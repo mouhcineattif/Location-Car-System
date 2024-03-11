@@ -1,0 +1,93 @@
+:root{
+    --main-padding:80px;
+    --main-color:#4bc970;
+    --secondary-color:rgb(41, 97, 112);
+}
+
+.delete{
+    margin-right: 6px;
+    background-color: #ff2400;
+    border-radius: 19px 13px 13px 19px;
+
+}
+.update:hover,.delete:hover{
+    animation: bounce 1s linear 0s infinite ;
+}
+.update,.delete{
+    padding: 5px 9px;
+    border: none;
+    font-size: 19px;
+    font-weight: 700;
+    transition: 0.5s;
+    color: white;
+}
+.update{
+    background-color: #90ee90;
+    border-radius: 13px 19px 19px 13px;
+    margin-left: 6px;
+}
+@keyframes bounce {
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(1.1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    75%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.table{
+    width: 80% !important;
+    margin: 50px auto !important;
+    th,td{
+        width: 20%;
+        text-align: center;
+        border: 1px solid rgb(221, 221, 221);
+    }
+}
+/* .body{
+    background: radial-gradient(gray,white 90%);
+    height: 100vh;
+    width: 100%;
+} */
+.navbar{
+    box-shadow: 0px 5px 50px #cbcbcb;
+}
+.login{
+    background-color: var(--secondary-color);
+    border-radius: 19px;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    transition: 0.5s;
+}
+.signup{
+    background-color: var(--main-color);
+    border-radius: 19px;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    transition: 0.5s;
+}
+#containerlogin{
+    display: flex  !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 20%;
+}
+#login{
+    border-radius: 50px !important;
+}
+#signupForm{
+    margin-top: 40px;
+    width: 90%;
+}
+
